@@ -1,5 +1,5 @@
 export const WA_CONFIG = {
-  phone: '5511999999999', // Altere facilmente para o número de WhatsApp corporativo
+  phone: '5522988353084', // Altere facilmente para o número de WhatsApp corporativo
   defaultMsg: 'Olá! Gostaria de entender como a NEXA Digital pode ajudar a minha empresa a vender mais no WhatsApp.',
 };
 

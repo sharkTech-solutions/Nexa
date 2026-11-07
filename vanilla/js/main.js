@@ -8,7 +8,7 @@
 
   // Configuração Global do WhatsApp
   const WA_CONFIG = {
-    phone: '5511999999999', // Altere facilmente para o número de WhatsApp desejado (DDI + DDD + Número)
+    phone: '5522988353084', // Altere facilmente para o número de WhatsApp desejado (DDI + DDD + Número)
     defaultMsg: 'Olá! Gostaria de entender como a NEXA Digital pode ajudar a minha empresa a vender mais no WhatsApp.'
   };
 
