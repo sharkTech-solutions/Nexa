@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA Digital — Atração Local, Conversão & Multiatendimento no WhatsApp</title>
+  <meta name="description" content="A NEXA Digital atrai clientes qualificados da sua região no Google, converte com landing pages ultra-rápidas e centraliza o multiatendimento no WhatsApp em um único número corporativo.">
+  <meta name="theme-color" content="#080B11">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Enterprise UI/Display) + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader Tecnológico -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <img src="logo.png" alt="NEXA Digital" class="pre-logo">
+    <div class="pre-count"><span id="preNum">0</span><i>%</i></div>
+    <div class="pre-bar"><span id="preBar"></span></div>
+  </div>
+
+  <!-- Noise Grain & Scroll Progress -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress-bar-top" id="progress"></div>
+
+  <!-- Header / Barra de Navegação Flutuante -->
+  <header class="nav-wrap">
+    <div class="glass-nav" id="nav">
+      <a href="#top" class="brand" aria-label="NEXA Digital Início">
+        <img src="logo.png" alt="NEXA Digital Logo">
+      </a>
+      <nav class="links" id="links">
+        <a href="#metodo"><i>01</i> Método</a>
+        <a href="#simulador"><i>02</i> Simulador</a>
+        <a href="#roi"><i>03</i> Calculadora ROI</a>
+        <a href="#planos"><i>04</i> Planos</a>
+        <a href="#faq"><i>05</i> FAQ</a>
+      </nav>
+      <a class="nav-cta wa-link" href="#" data-msg="Olá! Gostaria de conversar com a equipe da NEXA Digital.">
+        <span>Falar agora</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= 01. HERO SECTION ================= -->
+    <section class="hero" id="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <h1 class="hero-title" id="heroTitle">
+          A sua equipe ainda divide <span class="grad">um único celular</span> para atender clientes no WhatsApp?
+        </h1>
+
+        <div class="hero-bottom">
+          <div class="hero-copy">
+            <p class="lead">
+              Atraia clientes da sua região no Google, converta com páginas de resposta instantânea e atenda todas as conversas em um único número corporativo com vários atendentes simultâneos. Menos tempo de espera, mais contratos fechados.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary btn-xl wa-link" href="#" data-msg="Olá! Quero um diagnóstico gratuito do atendimento da minha empresa.">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.1C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+                </svg>
+                <span>Quero atender sem perder vendas</span>
+              </a>
+
+              <a class="link-arrow" href="#simulador">
+                <span>Ver demonstração ao vivo</span>
+                <i>→</i>
+              </a>
+            </div>
+
+            <ul class="trust">
+              <li>
+                <b>3x</b>
+                <span>mais respostas rápidas</span>
+              </li>
+              <li>
+                <b>24h</b>
+                <span>para entrar no ar</span>
+              </li>
+              <li>
+                <b>0</b>
+                <span>multa de fidelidade</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mockup do Painel de Atendimento em Tempo Real -->
+          <aside class="panel-wrap" aria-label="Painel demonstrativo em tempo real">
+            <div class="panel spot" id="panel">
+              <div class="panel-head">
+                <span class="live"><i class="pulse-dot green"></i> CENTRAL AO VIVO</span>
+                <small id="clock">--:--:--</small>
+              </div>
+
+              <div class="kpis">
+                <div class="kpi">
+                  <small>Tempo Médio de Resposta</small>
+                  <strong>00:42</strong>
+                  <em class="up">▼ 87% vs. modelo antigo</em>
+                </div>
+                <div class="kpi">
+                  <small>Conversas Simultâneas</small>
+                  <strong>18</strong>
+                  <em>neste momento</em>
+                </div>
+              </div>
+
+              <div class="bars" id="bars" aria-label="Gráfico de fluxo de mensagens por hora" aria-hidden="true"></div>
+
+              <ul class="agents">
+                <li>
+                  <div>
+                    <span class="av">AM</span>
+                    <div>
+                      <b>Ana · Comercial</b>
+                      <small>Atendendo Lead Google</small>
+                    </div>
+                  </div>
+                  <i class="st on" title="Online e respondendo"></i>
+                </li>
+                <li>
+                  <div>
+                    <span class="av">RS</span>
+                    <div>
+                      <b>Rui · Suporte Técnico</b>
+                      <small>Disponível para chamada</small>
+                    </div>
+                  </div>
+                  <i class="st on" title="Disponível"></i>
+                </li>
+                <li>
+                  <div>
+                    <span class="av">CF</span>
+                    <div>
+                      <b>Carla · Financeiro</b>
+                      <small>Emitindo 2ª via PIX</small>
+                    </div>
+                  </div>
+                  <i class="st busy" title="Em atendimento"></i>
+                </li>
+                <li>
+                  <div>
+                    <span class="av">PL</span>
+                    <div>
+                      <b>Paulo · Comercial</b>
+                      <small>Em pausa programada</small>
+                    </div>
+                  </div>
+                  <i class="st off" title="Offline temporário"></i>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Chips Flutuantes de Conversão -->
+            <div class="float-chip c1"><i>★</i> Novo lead via Google Meu Negócio</div>
+            <div class="float-chip c2"><i>✓</i> Venda confirmada · R$ 680,00</div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Ticker Marquee Infinito -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Google Meu Negócio</span><em>✦</em>
+          <span>Landing Pages Corporativas</span><em>✦</em>
+          <span>Multiatendimento Centralizado</span><em>✦</em>
+          <span>WhatsApp Business Oficial</span><em>✦</em>
+          <span>Atração Geolocalizada</span><em>✦</em>
+          <span>Zero Vendas Perdidas</span><em>✦</em>
+          <span>Google Meu Negócio</span><em>✦</em>
+          <span>Landing Pages Corporativas</span><em>✦</em>
+          <span>Multiatendimento Centralizado</span><em>✦</em>
+          <span>WhatsApp Business Oficial</span><em>✦</em>
+          <span>Atração Geolocalizada</span><em>✦</em>
+          <span>Zero Vendas Perdidas</span><em>✦</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02. MANIFESTO ================= -->
+    <section class="manifesto wrap">
+      <span class="eyebrow">Diagnóstico de Mercado</span>
+      <p class="scrub">
+        Cada mensagem sem resposta imediata é um cliente contratando o seu concorrente. A NEXA estrutura o ciclo completo: do primeiro clique geolocalizado no Google à negociação assertiva no WhatsApp.
+      </p>
+    </section>
+
+    <!-- ================= 03. O MÉTODO EM 3 ETAPAS ================= -->
+    <section id="metodo" class="method wrap">
+      <div class="sec-head">
+        <span class="eyebrow">01 — Metodologia Integrada</span>
+        <h2>Três etapas estratégicas.<br><span class="grad">Zero clientes perdidos.</span></h2>
+        <p class="muted">Estruturamos sua operação para captar demanda qualificada da sua região, filtrar visitantes e converter atendimentos em faturamento.</p>
+      </div>
+
+      <div class="stack">
+        <!-- Etapa 1: Atração Local -->
+        <article class="layer spot">
+          <div class="layer-text">
+            <span class="big-num">01</span>
+            <h3>Atração Local</h3>
+            <p>
+              Otimizamos o seu perfil no Google Meu Negócio com técnicas avançadas de SEO local para colocar sua empresa no topo das buscas regionais. Fotos profissionais, gestão ativa de avaliações e canal direto para contato.
+            </p>
+            <ul class="ticks">
+              <li>Perfil 100% verificado, catalogado e otimizado</li>
+              <li>Estratégia para captação contínua de avaliações positivas</li>
+              <li>Destaque geolocalizado em "perto de mim" e no Google Maps</li>
+            </ul>
+          </div>
+          <div class="layer-visual">
+            <div class="map">
+              <span class="pin p1"></span>
+              <span class="pin p2"></span>
+              <span class="pin p3"></span>
+              <div class="gcard">
+                <b>Sua Empresa Local em Destaque</b>
+                <div class="stars">4,9 <i>★★★★★</i> <small>(284 avaliações)</small></div>
+                <small class="open">● Aberto agora · Atendimento Imediato</small>
+                <div class="gbtns">
+                  <span>Ligar</span>
+                  <span class="wa">WhatsApp ↗</span>
+                  <span>Rotas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Etapa 2: Conversão Rápida -->
+        <article class="layer spot">
+          <div class="layer-text">
+            <span class="big-num">02</span>
+            <h3>Conversão Rápida</h3>
+            <p>
+              Landing pages ultra-leves desenvolvidas para alta taxa de conversão em dispositivos móveis. Sem distrações, com carregamento em menos de 2 segundos e foco em levar o lead qualificado direto ao WhatsApp.
+            </p>
+            <ul class="ticks">
+              <li>Score 95+ de performance e velocidade no Google PageSpeed</li>
+              <li>Arquitetura pensada para tomada rápida de decisão</li>
+              <li>Chamadas para ação integradas e com rastreamento de métricas</li>
+            </ul>
+          </div>
+          <div class="layer-visual">
+            <div class="browser">
+              <div class="bar">
+                <i></i><i></i><i></i>
+                <span>suaempresa.com.br/atendimento</span>
+              </div>
+              <div class="bbody">
+                <div class="ring" style="--v:98">
+                  <b>98</b>
+                  <small>Score</small>
+                </div>
+                <div class="lines">
+                  <span></span>
+                  <span></span>
+                  <span class="s"></span>
+                  <em>Chamar no WhatsApp (1 clique)</em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Etapa 3: Fechamento & Retenção -->
+        <article class="layer spot">
+          <div class="layer-text">
+            <span class="big-num">03</span>
+            <h3>Fechamento &amp; Retenção</h3>
+            <p>
+              Plataforma de multiatendimento corporativo: 5, 10 ou mais atendentes operando no mesmo número de WhatsApp, com triagem inteligente, filas organizadas por setor e histórico centralizado.
+            </p>
+            <ul class="ticks">
+              <li>Distribuição automática de clientes por departamento</li>
+              <li>Histórico unificado da conversa para toda a equipe</li>
+              <li>Métricas em tempo real de tempo de resposta e produtividade</li>
+            </ul>
+          </div>
+          <div class="layer-visual">
+            <div class="mini-list">
+              <div class="row">
+                <span class="av">AM</span>
+                <div>
+                  <b>Mariana Silveira</b>
+                  <small>Quero proposta de contratação...</small>
+                </div>
+                <em>Comercial</em>
+              </div>
+              <div class="row">
+                <span class="av">RS</span>
+                <div>
+                  <b>Lucas Andrade</b>
+                  <small>Dúvida sobre entrega em domicílio</small>
+                </div>
+                <em>Suporte</em>
+              </div>
+              <div class="row">
+                <span class="av">CF</span>
+                <div>
+                  <b>Studio Arquitetura</b>
+                  <small>Comprovante de pagamento enviado</small>
+                </div>
+                <em>Financeiro</em>
+              </div>
+              <div class="row">
+                <span class="av">AM</span>
+                <div>
+                  <b>Carlos Eduardo</b>
+                  <small>Contrato assinado, vamos iniciar!</small>
+                </div>
+                <em>Comercial</em>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 04. SIMULADOR INTERATIVO ================= -->
+    <section id="simulador" class="section wrap">
+      <div class="sec-head">
+        <span class="eyebrow">02 — Demonstração Interativa</span>
+        <h2>Veja a triagem corporativa<br><span class="grad">em operação em tempo real.</span></h2>
+        <p class="muted">Simule o fluxo do seu cliente: selecione um departamento abaixo e observe o encaminhamento instantâneo para o atendente correto.</p>
+      </div>
+
+      <div class="sim">
+        <!-- Mockup do Celular -->
+        <div class="phone-shell">
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="phone-top">
+              <span class="av sm">N</span>
+              <div>
+                <b>NEXA · Central Corporativa</b>
+                <small id="simStatus">online</small>
+              </div>
+            </div>
+
+            <div class="chat" id="chat" aria-live="polite">
+              <div class="msg in">
+                Olá! 👋 Bem-vindo(a) à central de atendimento. Por favor, escolha o departamento desejado para iniciarmos o seu atendimento imediato:
+              </div>
+            </div>
+
+            <div class="opts" id="opts">
+              <button data-sector="Comercial">🛒 1. Departamento Comercial</button>
+              <button data-sector="Suporte">🛠️ 2. Suporte &amp; Dúvidas</button>
+              <button data-sector="Financeiro">💳 3. Setor Financeiro</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bastidores / Step Tracker -->
+        <div class="sim-side">
+          <h3>O que acontece nos bastidores</h3>
+          <ol class="steps" id="steps">
+            <li>
+              <b>1. Cliente escolhe o departamento</b>
+              <small>Menu corporativo direto, eliminando filas de espera e confusão.</small>
+            </li>
+            <li>
+              <b>2. Triagem e direcionamento automático</b>
+              <small>O sistema identifica a demanda e encaminha para a fila correta.</small>
+            </li>
+            <li>
+              <b>3. Atendente livre recebe a conversa</b>
+              <small>Notificação em tempo real no painel do operador com histórico do lead.</small>
+            </li>
+            <li>
+              <b>4. Atendimento humanizado iniciado</b>
+              <small>Primeira resposta em menos de 1 minuto, maximizando a retenção.</small>
+            </li>
+          </ol>
+          <button class="btn btn-ghost" id="simReset">↺ Reiniciar demonstração</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05. CALCULADORA DE ROI ================= -->
+    <section id="roi" class="section wrap">
+      <div class="sec-head">
+        <span class="eyebrow">03 — Estimativa Financeira</span>
+        <h2>Quanto a sua empresa<br><span class="grad">está deixando de faturar?</span></h2>
+        <p class="muted">Ajuste os indicadores conforme a realidade do seu negócio e veja o impacto financeiro da redução no tempo de atendimento.</p>
+      </div>
+
+      <div class="roi">
+        <!-- Resultado / Destaque -->
+        <div class="roi-result spot">
+          <small>Faturamento Mensal Recuperado (Estimativa)</small>
+          <strong id="roiValue">R$ 0</strong>
+
+          <div class="roi-meta">
+            <div>
+              <small>Projeção Anual Recuperada</small>
+              <b id="roiYear">R$ 0</b>
+            </div>
+            <div>
+              <small>Retorno sobre R$ 127/mês</small>
+              <b id="roiX">0x</b>
+            </div>
+          </div>
+
+          <a class="btn btn-primary wa-link" href="#" id="roiCta" data-msg="Olá! Gostaria de recuperar as vendas perdidas no WhatsApp com a NEXA Digital.">
+            <span>Quero recuperar esse valor ↗</span>
+          </a>
+
+          <p class="fine">
+            *Cálculo estimativo considerando 22 dias úteis/mês e recuperação média de 80% dos contatos que hoje desistem devido ao tempo de espera.
+          </p>
+        </div>
+
+        <!-- Sliders Interativos -->
+        <div class="sliders">
+          <label>
+            <span>Volume de contatos novos por dia</span>
+            <output id="oVol">30 atendimentos</output>
+            <input type="range" id="rVol" min="5" max="200" value="30">
+          </label>
+
+          <label>
+            <span>Ticket médio da sua venda</span>
+            <output id="oTicket">R$ 250</output>
+            <input type="range" id="rTicket" min="30" max="3000" step="10" value="250">
+          </label>
+
+          <label>
+            <span>Contatos perdidos hoje por demora</span>
+            <output id="oLoss">30%</output>
+            <input type="range" id="rLoss" min="5" max="70" value="30">
+          </label>
+
+          <label>
+            <span>Sua taxa média de conversão / fechamento</span>
+            <output id="oClose">25%</output>
+            <input type="range" id="rClose" min="5" max="60" value="25">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06. TABELA DE PLANOS ================= -->
+    <section id="planos" class="section wrap">
+      <div class="sec-head">
+        <span class="eyebrow">04 — Planos Corporativos</span>
+        <h2>Escolha a estrutura adequada<br><span class="grad">para a escala do seu negócio.</span></h2>
+        <p class="muted">Condições transparentes, suporte técnico especializado e sem fidelidade contratual.</p>
+      </div>
+
+      <!-- Indicador de Swipe no Mobile -->
+      <div class="plans-swipe-hint" style="display: none; align-items: center; justify-content: space-between; font-size: 12px; color: #94a3b8; margin-bottom: 12px; padding: 0 4px; font-family: var(--font-mono);">
+        <span style="color: #38bdf8;">Deslize para ver os planos ⟷</span>
+      </div>
+
+      <div class="plans-carousel-wrap">
+      <div class="plans">
+        <!-- Plano 1 -->
+        <article class="plan spot">
+          <span class="plan-n">01</span>
+          <h3>LP Rápida</h3>
+          <p class="muted">Landing page profissional de alta conversão para tráfego pago ou orgânico.</p>
+          <div class="price">
+            <small>Investimento Único</small>
+            <strong>R$ 497</strong>
+          </div>
+          <ul class="ticks">
+            <li>Design corporativo moderno e responsivo</li>
+            <li>Otimização avançada de velocidade mobile</li>
+            <li>Botão de WhatsApp com mensagem personalizada</li>
+            <li>Hospedagem rápida configurada</li>
+          </ul>
+          <a class="btn btn-ghost wa-link" href="#" data-msg="Olá! Gostaria de contratar o plano LP Rápida (R$ 497 único).">Escolher Plano</a>
+        </article>
+
+        <!-- Plano 2 -->
+        <article class="plan spot">
+          <span class="plan-n">02</span>
+          <h3>Multiatendimento</h3>
+          <p class="muted">Centralize toda a sua equipe em um único número oficial de WhatsApp.</p>
+          <div class="price">
+            <small>Configuração Inicial</small>
+            <strong>R$ 697</strong>
+            <span>+ R$ 127/mês</span>
+          </div>
+          <ul class="ticks">
+            <li>Múltiplos atendentes em simultâneo</li>
+            <li>Triagem e roteamento por departamento</li>
+            <li>Histórico compartilhado de conversas</li>
+            <li>Suporte técnico contínuo sem fidelidade</li>
+          </ul>
+          <a class="btn btn-ghost wa-link" href="#" data-msg="Olá! Gostaria de contratar o plano Multiatendimento WhatsApp (R$ 697 + R$ 127/mês).">Escolher Plano</a>
+        </article>
+
+        <!-- Plano 3 -->
+        <article class="plan spot">
+          <span class="plan-n">03</span>
+          <h3>Combo Tração</h3>
+          <p class="muted">Landing Page de alta performance integrada ao multiatendimento no WhatsApp.</p>
+          <div class="price">
+            <small>Configuração Inicial</small>
+            <strong>R$ 997</strong>
+            <span>+ R$ 127/mês</span>
+          </div>
+          <ul class="ticks">
+            <li>Landing Page Rápida completa</li>
+            <li>Central de Multiatendimento no WhatsApp</li>
+            <li>Rastreamento de conversão (Meta / Google)</li>
+            <li>Treinamento operacional para a equipe</li>
+          </ul>
+          <a class="btn btn-ghost wa-link" href="#" data-msg="Olá! Gostaria de contratar o Combo Tração (R$ 997 + R$ 127/mês).">Escolher Plano</a>
+        </article>
+
+        <!-- Plano 4: DESTAQUE -->
+        <article class="plan featured spot">
+          <span class="badge">Recomendado</span>
+          <span class="plan-n">04</span>
+          <h3>Máquina de Vendas</h3>
+          <p class="muted">O ecossistema definitivo: atração no Google, página de conversão e atendimento integrado.</p>
+          <div class="price">
+            <small>Configuração Completa</small>
+            <strong>R$ 1.497</strong>
+            <span>+ R$ 127/mês</span>
+          </div>
+          <ul class="ticks">
+            <li>Otimização Google Meu Negócio Pro</li>
+            <li>Landing Page Rápida corporativa</li>
+            <li>Central de Multiatendimento configurada</li>
+            <li>Acompanhamento prioritário de métricas</li>
+            <li>Sem contrato de fidelidade</li>
+          </ul>
+          <a class="btn btn-primary wa-link" href="#" data-msg="Olá! Quero fechar o Combo Máquina de Vendas (R$ 1.497 + R$ 127/mês). Podem me atender agora?">
+            <span>Contratar Solução Completa ↗</span>
+          </a>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- ================= 07. FAQ ACCORDION ================= -->
+    <section id="faq" class="section wrap faq-wrap">
+      <div class="sec-head">
+        <span class="eyebrow">05 — Dúvidas Frequentes</span>
+        <h2>Perguntas frequentes.<br><span class="grad">Esclarecimentos diretos.</span></h2>
+      </div>
+
+      <div class="faq">
+        <div class="qa">
+          <button class="q" aria-expanded="false">
+            <em>01</em>
+            <span>Preciso trocar o meu número atual de WhatsApp?</span>
+            <i></i>
+          </button>
+          <div class="a">
+            <p>Não! Configuramos a plataforma diretamente sobre o número que sua empresa já utiliza e divulga para seus clientes, mantendo todo o seu histórico e reconhecimento de marca.</p>
+          </div>
+        </div>
+
+        <div class="qa">
+          <button class="q" aria-expanded="false">
+            <em>02</em>
+            <span>Quantos atendentes podem responder ao mesmo tempo?</span>
+            <i></i>
+          </button>
+          <div class="a">
+            <p>Você pode conectar múltiplos atendentes simultâneos de acordo com a sua necessidade operacional, cada um com login individual e distribuídos por setores como Comercial, Atendimento e Financeiro.</p>
+          </div>
+        </div>
+
+        <div class="qa">
+          <button class="q" aria-expanded="false">
+            <em>03</em>
+            <span>Qual o prazo para colocar tudo funcionando?</span>
+            <i></i>
+          </button>
+          <div class="a">
+            <p>Nossa equipe realiza a entrega e homologação da infraestrutura em poucos dias úteis (geralmente entre 24h e 72h úteis após o alinhamento de acessos e materiais).</p>
+          </div>
+        </div>
+
+        <div class="qa">
+          <button class="q" aria-expanded="false">
+            <em>04</em>
+            <span>O que está incluso na mensalidade de R$ 127/mês?</span>
+            <i></i>
+          </button>
+          <div class="a">
+            <p>Inclui a infraestrutura da plataforma em nuvem, servidores dedicados de alta estabilidade, suporte técnico especializado e atualizações contínuas de segurança. Sem fidelidade.</p>
+          </div>
+        </div>
+
+        <div class="qa">
+          <button class="q" aria-expanded="false">
+            <em>05</em>
+            <span>Os valores calculados na calculadora de ROI são garantidos?</span>
+            <i></i>
+          </button>
+          <div class="a">
+            <p>A calculadora apresenta uma projeção matemática baseada nos parâmetros informados por você. O resultado demonstra o poder de não deixar clientes sem resposta rápida, embora cada negócio possua particularidades operacionais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 08. CTA FINAL ================= -->
+    <section class="final wrap">
+      <div class="final-in spot">
+        <span class="eyebrow">Próximo Passo</span>
+        <h2>Elimine a demora no atendimento e aumente o faturamento da sua operação.</h2>
+        <a class="btn btn-primary btn-xl wa-link" href="#" data-msg="Olá! Gostaria de implementar a estrutura de atendimento da NEXA Digital na minha empresa. Como começamos?">
+          <span>Iniciar atendimento no WhatsApp ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 09. FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <img src="logo.png" alt="NEXA Digital">
+        <p>
+          Atração local geolocalizada, landing pages corporativas e atendimento centralizado no WhatsApp para empresas que buscam escala comercial.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <a href="#metodo">O Método</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#roi">Calculadora ROI</a>
+        <a href="#planos">Planos</a>
+      </div>
+
+      <div>
+        <h4>Soluções</h4>
+        <a href="#planos">Landing Pages</a>
+        <a href="#planos">Multiatendimento</a>
+        <a href="#metodo">Google Meu Negócio</a>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <a class="wa-link" href="#" data-msg="Olá! Gostaria de falar com o time da NEXA Digital.">WhatsApp Oficial</a>
+        <a href="#faq">Perguntas Frequentes</a>
+      </div>
+    </div>
+
+    <!-- Watermark Tipográfica -->
+    <div class="giant" aria-hidden="true">NEXA</div>
+
+    <div class="wrap copy">
+      <span>© <span id="year">2026</span> NEXA Digital. Todos os direitos reservados.</span>
+      <a href="#top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante Permanente do WhatsApp -->
+  <a class="float-wa wa-link" href="#" data-msg="Olá! Estava navegando no site da NEXA Digital e quero tirar algumas dúvidas." aria-label="Falar agora no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.1C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

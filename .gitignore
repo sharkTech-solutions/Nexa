@@ -1,0 +1,6 @@
+# Pacote desnecessários para o github
+node_modules/
+.next/
+tsconfig.tsbuildinfo
+
+.env*
